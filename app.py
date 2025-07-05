@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     app.logger.info(f"Request received from {request.remote_addr}")
-    return "Welcome to yFarview Global Private Limited"
+    return "Welcome to Farview Global Private Limited"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
